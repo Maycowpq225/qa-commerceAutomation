@@ -15,6 +15,6 @@ Feature: Checkout
 
     Scenario: Checkout Simples sem aceitar termos e condições do site
         When preencho campos obrigatorios
-        And escolho pagamento via "Boleto"
+        And escolho pagamento via "Pix"
         And finalizo o pedido
-        Then sou redirecionado para o status do pedido com pagamento aprovado
+        Then é exibido a mensagem de erro abaixo do checkbox de termos

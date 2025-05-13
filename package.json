@@ -10,7 +10,7 @@
   "author": "",
   "license": "ISC",
   "cypress-cucumber-preprocessor": {
-    "stepDefinitions": "cypress/e2e/steps/**/*.{js,ts}"
+    "stepDefinitions": "cypress/e2e/***/**/*.{js,ts}"
   },
   "dependencies": {
     "chai": "^4.3.10",
