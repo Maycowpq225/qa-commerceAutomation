@@ -9,11 +9,11 @@
 - NodeJS 20.17.0
 - Cypress 12.1.0
 - Cypress-cucumber-preprocessor
-- IDE (Sua escolha, porem visual studio code é preferivel)
+- IDE (Sua escolha, porem visual studio code é preferível)
 
 # Como usar
 
 - Fazer download de todos os requisitos acima
-- Clonar o projeto do repositorio https://github.com/Maycowpq225/qa-commerceAutomation
-- Dentro do diretorio, abrir terminal e executar comando "npm install" para baixar todas dependencias
-- Executar comando "npm run open" para abrir o Cypress e executar testes
+- Clonar o projeto do repositório https://github.com/Maycowpq225/qa-commerceAutomation
+- Dentro do diretorio, abrir terminal e executar comando "npm install" para baixar todas as dependências
+- Executar comando "npm run open" para abrir o Cypress e executar os testes
