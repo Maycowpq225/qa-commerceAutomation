@@ -11,7 +11,8 @@ class CheckoutPO {
         checkBoxAceiteTermos: () => cy.get('#terms'),
         btnFinalizarPedido: () => cy.get('.btn.btn-primary').contains('Finalizar Pedido'),
         lblStatusDoPedido: () => cy.get('h1').contains('STATUS DO PEDIDO'),
-        lblPagamentoAprovado: () => cy.get('strong').contains('Pagamento aprovado')
+        lblPagamentoAprovado: () => cy.get('strong').contains('Pagamento aprovado'),
+        navbar: () => cy.get('.navbar-brand')
     }
 }
 export default CheckoutPO

@@ -16,4 +16,4 @@
 - Fazer download de todos os requisitos acima
 - Clonar o projeto do repositório https://github.com/Maycowpq225/qa-commerceAutomation
 - Dentro do diretorio, abrir terminal e executar comando "npm install" para baixar todas as dependências
-- Executar comando "npm run open" para abrir o Cypress e executar os testes
+- Executar comando "cypress:open" para abrir o Cypress e executar os testes ou 'cypress:run' para executar modo headless
