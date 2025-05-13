@@ -1,6 +1,6 @@
 import RestRequest from "../../../../support/RestRequests";
 
-const produtosEndPoint = 'http://localhost:3000/api/produtos';
+const produtosEndPoint = Cypress.env('base_url') + '/produtos';
 
 class ProdutosController extends RestRequest {
     buscarProdutoValido() {

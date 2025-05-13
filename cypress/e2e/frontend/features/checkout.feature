@@ -6,6 +6,7 @@ Feature: Checkout
         And vou para o carrinho
         And sigo para o Checkout
 
+    @QA_Commerce @frontend @test_006 @checkout
     Scenario: Checkout Simples
         When preencho campos obrigatorios
         And escolho pagamento via "Boleto"
@@ -13,6 +14,7 @@ Feature: Checkout
         And finalizo o pedido
         Then sou redirecionado para o status do pedido com pagamento aprovado
 
+    @QA_Commerce @frontend @test_007 @checkout
     Scenario: Checkout Simples sem aceitar termos e condições do site
         When preencho campos obrigatorios
         And escolho pagamento via "Pix"

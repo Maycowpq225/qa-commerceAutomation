@@ -1,6 +1,6 @@
 import RestRequest from "../../../../support/RestRequests";
 
-const carrinhoEndPoint = 'http://localhost:3000/api/carrinho';
+const carrinhoEndPoint = Cypress.env('base_url') + '/carrinho';
 
 class CarrinhoController extends RestRequest {
     adicionarProdutoAoCarrinho() {
