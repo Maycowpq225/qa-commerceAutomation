@@ -1,8 +1,17 @@
-const { default: RestRequests } = require("../../../../support/RestRequests");
+import RestRequest from "../../../../support/RestRequests";
 
-const restRequests = new RestRequests();
 const carrinhoEndPoint = 'http://localhost:3000/api/carrinho';
 
-    function adicionarProdutoAoCarrinho() {
-        restRequests.doPostRequestWithBody()
+class CarrinhoController extends RestRequest {
+    adicionarProdutoAoCarrinho() {
+        cy.get('@produtoEscolhido').then(produto => {
+            const body = {
+                productId: produto.id,
+                quantity: 1
+            }
+            this.doPostRequestWithBody(body, carrinhoEndPoint)
+        })
     }
+
+}
+export default CarrinhoController

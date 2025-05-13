@@ -3,6 +3,6 @@ const { default: ProdutosController } = require("./ProdutosController");
 
 const produtosController = new ProdutosController();
 
-Given ('que busco um produto na lista de produtos', () => {
+Given('que busco um produto na lista de produtos', () => {
     produtosController.buscarProdutoValido();
 })
