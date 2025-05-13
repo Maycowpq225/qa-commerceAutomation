@@ -1,5 +1,5 @@
 const { Given } = require("@badeball/cypress-cucumber-preprocessor");
-import MinhaContaPA from "./minhaContaPA";
+import MinhaContaPA from "./MinhaContaPA";
 import MinhaContaService from "./MinhaContaService";
 
 const minhaContaService = new MinhaContaService();

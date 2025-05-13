@@ -2,9 +2,10 @@ const { Given } = require("@badeball/cypress-cucumber-preprocessor");
 const { default: HomePA } = require("./HomePA");
 
 const homePA = new HomePA()
+const site = Cypress.env('site');
 
 Given('que estou na home do portal QACommerce', () => {
-    cy.visit('http://localhost:3000')
+    cy.visit(site)
 })
 
 Given('adiciono um produto ao carrinho', () => {

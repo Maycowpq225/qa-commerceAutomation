@@ -1,6 +1,6 @@
 import RestRequest from "../../../../support/RestRequests";
 
-const userEndpoint = "http://localhost:3000/api/users"
+const userEndpoint = Cypress.env('base_url') + '/users'
 
 class UsuarioController extends RestRequest {
 
