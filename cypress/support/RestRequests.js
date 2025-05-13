@@ -1,7 +1,7 @@
 class RestRequests {
-    
+
     doPostRequestWithBody(bodyRequest, resource) {
-        return cy.request({
+        cy.request({
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json; charset=utf-8',
@@ -9,16 +9,16 @@ class RestRequests {
             body: bodyRequest,
             url: resource,
             failOnStatusCode: false
-        })
-    }   
-    
+        }).as('response')
+    }
+
     doGetRequestWithBody(bodyRequest, resource) {
         cy.request({
             method: 'GET',
             body: bodyRequest,
             url: resource,
             failOnStatusCode: false //Serve para o teste dar continuidade mesmo se o status code for diferente de 200 ou 201
-        }).as(response);
+        }).as('response');
     }
 
     doGetRequest(resource) {
@@ -35,7 +35,7 @@ class RestRequests {
             method: 'GET',
             url: url,
             failOnStatusCode: false //Serve para o teste dar continuidade mesmo se o status code for diferente de 200 ou 201
-        })
+        }).as('response');
     }
 
     requisicaoGetComHeader(keyHeader, valueHeader) {
@@ -46,7 +46,7 @@ class RestRequests {
             },
             url: url, //url da api a ser feito o request
             failOnStatusCode: false //Serve para o teste dar continuidade mesmo se o status code for diferente de 200 ou 201
-        })
+        }).as('response');
     }
 }
 export default RestRequests

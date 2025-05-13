@@ -1,13 +1,13 @@
-const { default: RestRequests } = require("../../../../support/RestRequests");
+import RestRequest from "../../../../support/RestRequests";
 
 const produtosEndPoint = 'http://localhost:3000/api/produtos';
 
-class ProdutosController extends RestRequests {
-
+class ProdutosController extends RestRequest {
     buscarProdutoValido() {
         this.doGetRequest(produtosEndPoint)
         cy.get('@response').then(resp => {
-            console.log('AQUIIII' + JSON.stringify(resp.body.products[1]))
+            const produtoEscolhido = Math.floor(Math.random() * resp.body.products.length)
+            cy.wrap(resp.body.products[produtoEscolhido]).as('produtoEscolhido')
         })
     }
 }

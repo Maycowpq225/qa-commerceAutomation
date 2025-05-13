@@ -8,7 +8,6 @@ Feature: usuário
 
     Scenario: Tentar criar usuário com email já cadastrado anteriormente
         Given que gero dados randomicos para um novo usuário
-        When executo a api de criação de usuário
-        And executo a api de criação de usuario com os mesmo dados anteriores
+        When executo a api de criação de usuario 2 vezes com os mesmo dados
         Then é apresentado a mensagem "Email já cadastrado." no body
         And é retornado o status code 400
