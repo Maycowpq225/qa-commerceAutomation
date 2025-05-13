@@ -1,6 +1,6 @@
 Feature: Atualização cadastral
 
-    Background: Caminho Atualização cadastral
+    Background: Caminho a Atualização cadastral
         Given que estou na home do portal QACommerce
         And clico no botão Minha Conta
         And realizo login com credenciais criadas via backend
